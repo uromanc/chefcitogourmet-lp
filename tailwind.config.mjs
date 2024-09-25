@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+//const defaultTheme = require('tailwindcss/defaultTheme')
+import defaultTheme from 'tailwindcss/defaultTheme'
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
@@ -10,7 +12,12 @@ export default {
       "sunset": "#F6C282",
       "tigerseye": "#BC6D0C"
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'pacifico': ["Pacifico", ...defaultTheme.fontFamily.mono],
+        'raleway': ["Raleway Variable", ...defaultTheme.fontFamily.sans]
+      }
+    },
   },
   plugins: [],
 }

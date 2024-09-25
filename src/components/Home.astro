@@ -1,0 +1,56 @@
+---
+import LogoDidi from "@/components/icons/LogoDidi.astro";
+import LogoUberEats from "@/components/icons/LogoUberEats.astro";
+import Novedades from "./Novedades.astro";
+
+/* TODO: 
+  - Cards Layout
+*/
+---
+
+<section class="w-[1000px]" id="home">
+  <div class="flex items-center justify-center gap-6 pl-5">
+    <div
+      class="box-content bg-princeton-orange w-80 h-56 -rotate-12 drop-shadow-lg hover:scale-110 hover:transition hover:ease-in-out hover:duration-400 hover:delay-200"
+    >
+      <div
+        class="box-content bg-smoky-black w-80 h-56 rotate-6 flex items-center justify-center"
+      >
+        <img
+          src="./1710429987990.webp"
+          alt="Menu Ilustracion"
+          class="object-cover w-64 h-44 border-4 border-white-smoke"
+        />
+      </div>
+    </div>
+    <div class="flex flex-col gap-4 pl-8">
+      <h3 class="font-black text-5xl">¿Hambriento?</h3>
+      <p class="font-light text-2xl">
+        Pídete unos boneless, hamburguesa o promoción de nuestro exquisíto menú.
+      </p>
+      <p class="font-bold text-xl">
+        Envíos a domicilio gratis en toda la ciudad.
+      </p>
+      <p class="font-bold text-xl flex flex-row gap-4">
+        Encuentrános también en:
+        <a
+          class="w-8 h-8 p-1 rounded-full bg-[#06C167] flex items-center justify-center hover:scale-110 hover:transition hover: ease-in-out hover:duration-300"
+          aria-label="uber eats"
+          href="https://www.ubereats.com/"
+          target="_blank"
+        >
+          <LogoUberEats />
+        </a>
+        <a
+          class="w-8 h-8 p-1 rounded-full bg-[#FF7D41] flex items-center justify-center hover:scale-110 hover:transition hover: ease-in-out hover:duration-300"
+          aria-label="didi food"
+          href="https://www.didi-food.com/"
+          target="_blank"
+        >
+          <LogoDidi />
+        </a>
+      </p>
+    </div>
+  </div>
+  <Novedades />
+</section>
