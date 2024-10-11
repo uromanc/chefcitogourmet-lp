@@ -1,54 +1,16 @@
-# Astro Starter Kit: Basics
+# Chefcito Gourmet Landing Page
 
-```sh
-npm create astro@latest -- --template basics
-```
+>🌯🍔**Proyecto de diseño y desarrollo de una landing page para un restaurante local**
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+![project](https://res.cloudinary.com/dcfplusx5/image/upload/v1728627430/706shots_so_cz8nvn.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+En este proyecto he diseño la página desde cero, planificado el proyecto y desarrollado el proyecto en las sigs. tecnologías:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+[![AstroJS](https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=fff&style=for-the-badge)](https://astro.build/)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/docs/installation)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/docs/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-## 🚀 Project Structure
+>📱 __Versión para dispositivos móviles en progreso__
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+[![chefcitogourmetlp](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMzIuMjgxMjk1Nzc2MzY3MiIgaGVpZ2h0PSIzNSIgdmlld0JveD0iMCAwIDEzMi4yODEyOTU3NzYzNjcyIDM1Ij48cmVjdCB3aWR0aD0iNzMuNjI1MDI2NzAyODgwODYiIGhlaWdodD0iMzUiIGZpbGw9IiNmNjhmMGUiLz48cmVjdCB4PSI3My42MjUwMjY3MDI4ODA4NiIgd2lkdGg9IjU4LjY1NjI2OTA3MzQ4NjMzIiBoZWlnaHQ9IjM1IiBmaWxsPSIjODE0YjA5Ii8+PHRleHQgeD0iMzYuODEyNTEzMzUxNDQwNDMiIHk9IjIxLjUiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSInUm9ib3RvJywgc2Fucy1zZXJpZiIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjIiPldBVENIPC90ZXh0Pjx0ZXh0IHg9IjEwMi45NTMxNjEyMzk2MjQwMiIgeT0iMjEuNSIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IidNb250c2VycmF0Jywgc2Fucy1zZXJpZiIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjkwMCIgbGV0dGVyLXNwYWNpbmc9IjIiPlNJVEU8L3RleHQ+PC9zdmc+)](https://chefcitogourmetlp.netlify.app/)
