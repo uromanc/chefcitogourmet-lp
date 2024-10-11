@@ -1,0 +1,266 @@
+---
+import Boneless from "@/components/Boneless.astro";
+import Salsa from "@/components/Salsa.astro";
+import Complementos from "./Complementos.astro";
+import Ensaladas from "./Ensaladas.astro";
+import Hamburguesas from "./Hamburguesas.astro";
+
+const cardsItems = [
+  { id: "SalsaBBQ", title: "BBQ" },
+  { id: "SalsaBuffalo", title: "Buffalo" },
+  { id: "SalsaBuffaloRanch", title: "Buffalo Ranch" },
+  { id: "SalsaChipotle", title: "Chipotle" },
+  { id: "SalsaBBQChipotle", title: "BBQ Chipotle" },
+  { id: "SalsaMangoHabanero", title: "Mango Habanero" },
+];
+const bonelessItems = [
+  {
+    id: "PaqInd",
+    title: "Paquete Individual",
+    contenido: ["6 Boneless", "Porción de papas gajo", "1L de té"],
+    precio: "110",
+  },
+  {
+    id: "PaqFam",
+    title: "Paquete Familiar",
+    contenido: [
+      "15 Boneless",
+      "Wrap de pollo",
+      "Hamburguesa de pollo & tradicional",
+      "Hamburguesa tradicional",
+      "Porción gde. de papas gajo",
+      "Aros de cebolla",
+      "Dedos de queso",
+      "2L de té",
+    ],
+    precio: "525",
+  },
+  {
+    id: "Paq1",
+    title: "Paquete #1",
+    contenido: ["10 Boneless", "Porción de papas gajo", "1L de té"],
+    precio: "150.00",
+  },
+  {
+    id: "Paq2",
+    title: "Paquete #2",
+    contenido: [
+      "15 Boneless",
+      "Porción de papas gajo",
+      "Aros de cebolla/Dedos de queso",
+      "1L de té",
+    ],
+    precio: "210.00",
+  },
+  /* {
+    id: "Paq3",
+    title: "Paquete #3",
+    contenido: ["25 Boneless", "Porción gde. de papas gajo", "2L de té"],
+    precio: "350.00",
+  }, */
+];
+const ensaladasItems = [
+  {
+    id: "ensBon",
+    title: "Ensalada Boneless",
+    precio: "125.00",
+  },
+  {
+    id: "ensWrap",
+    title: "Wrap",
+    precio: "75.00",
+  },
+  {
+    id: "ensWrapPapas",
+    title: "Wrap c/papas",
+    precio: "85.00",
+  },
+  {
+    id: "ensTrad",
+    title: "Ensalada Tradicional",
+    precio: "95.00",
+  },
+];
+const hamburguesasItems = [
+  {
+    id: "HambTrad",
+    title: "Hamburguesa Tradicional",
+    ingredientes: [
+      "Carne de res",
+      "Lechuga",
+      "Tomate",
+      "Cebolla",
+      "Queso Americano & Oaxaca",
+      "Tocino",
+      "Cremas",
+      "Jalapeños",
+      "Porción de papas a la francesa",
+    ],
+    precio: "65.00",
+  },
+  {
+    id: "BonBur",
+    title: "Boneless Burger",
+    ingredientes: [
+      "Boneless Crujientes bañados en salsa (a elegir)",
+      "Lechuga",
+      "Tomate",
+      "Cebolla",
+      "Queso Americano & Oaxaca",
+      "Tocino",
+      "Cremas",
+      "Jalapeños",
+      "Porción de papas a la francesa",
+    ],
+    precio: "85.00",
+  },
+  {
+    id: "HamDob",
+    title: "Hamburguesa Doble",
+    ingredientes: [
+      "2 carnes de res",
+      "Lechuga",
+      "Tomate",
+      "Cebolla",
+      "Doble Queso Americano & Oaxaca",
+      "Doble Tocino",
+      "Cremas",
+      "Jalapeños",
+      "Porción de papas a la francesa",
+    ],
+    precio: "100.00",
+  },
+  {
+    id: "FinChe",
+    title: "Finger Cheese",
+    ingredientes: [
+      "Carne de res",
+      "Lechuga",
+      "Tomate",
+      "Cebolla",
+      "Queso Americano & Oaxaca",
+      "Tocino",
+      "Cremas",
+      "Jalapeños",
+      "Dedos de queso con parmesano",
+      "Porción de papas a la francesa",
+    ],
+    precio: "85.00",
+  },
+  /* {
+    id: "HamTro",
+    title: "Hamburguesa Tropical",
+    ingredientes: [
+      "Carne de res",
+      "Lechuga",
+      "Tomate",
+      "Cebolla",
+      "Queso Americano & Oaxaca",
+      "Tocino",
+      "Cremas",
+      "Jalapeños",
+      "Porción de papas a la francesa",
+    ],
+    precio: "80.00",
+  }, */
+];
+const complementosItems = [
+  {
+    id: "complemento1",
+    title: "Papas Gajo Grande",
+    precio: "50.00",
+  },
+  {
+    id: "complemento2",
+    title: "Papas a la francesa",
+    precio: "45.00",
+  },
+  {
+    id: "complemento3",
+    title: "Papas con queso y tocino",
+    precio: "60.00",
+  },
+  {
+    id: "complemento4",
+    title: "Aros de cebolla 8 piezas",
+    precio: "45.00",
+  },
+  /* {
+    id: "complemento5",
+    title: "Burrito de Frijol",
+    precio: "15.00",
+  }, */
+];
+---
+
+<section class="w-[1000px] mt-10 flex flex-col justify-center" id="menu">
+  <h3 class="font-black text-7xl">Cónoce nuestro menú</h3>
+  <article class="flex flex-col gap-3">
+    <h4 class="font-extralight text-5xl">Salsas</h4>
+    <ul class="flex items-center gap-10">
+      {
+        cardsItems.map((cardItem) => (
+          <Salsa id={cardItem.id} title={cardItem.title} />
+        ))
+      }
+    </ul>
+  </article>
+  <article>
+    <h3 class="font-extralight text-5xl mt-3">Paquetes Boneless</h3>
+    <ul class="flex gap-3 mt-3">
+      {
+        bonelessItems.map((bonelessItem) => (
+          <Boneless
+            id={bonelessItem.id}
+            title={bonelessItem.title}
+            contenido={bonelessItem.contenido}
+            precio={bonelessItem.precio}
+          />
+        ))
+      }
+    </ul>
+  </article>
+  <article>
+    <h3 class="font-extralight text-5xl mt-3">Ensaladas & Wraps</h3>
+    <ul class="flex gap-3 mt-3">
+      {
+        ensaladasItems.map((ensaladasItem) => (
+          <Ensaladas
+            id={ensaladasItem.id}
+            title={ensaladasItem.title}
+            precio={ensaladasItem.precio}
+          />
+        ))
+      }
+    </ul>
+  </article>
+  <article>
+    <h3 class="font-extralight text-5xl mt-3">Hamburguesas</h3>
+    <ul class="flex gap-3 mt-3">
+      {
+        hamburguesasItems.map((hamburguesaItem) => (
+          <Hamburguesas
+            id={hamburguesaItem.id}
+            title={hamburguesaItem.title}
+            ingredientes={hamburguesaItem.ingredientes}
+            precio={hamburguesaItem.precio}
+          />
+        ))
+      }
+    </ul>
+  </article>
+  <article>
+    <h3 class="font-extralight text-5xl mt-3">Complementos</h3>
+    <ul class="flex gap-3 mt-3">
+      {
+        complementosItems.map((complementoItem) => (
+          <Complementos
+            id={complementoItem.id}
+            title={complementoItem.title}
+            precio={complementoItem.precio}
+          />
+        ))
+      }
+    </ul>
+  </article>
+</section>

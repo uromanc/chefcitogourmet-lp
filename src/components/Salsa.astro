@@ -1,0 +1,16 @@
+---
+const { id, title } = Astro.props;
+---
+
+<li
+  class="w-24 h-24 bg-gradient-to-tr from-chocolate via-sunset to-princeton-orange rounded-3xl rotate-45 flex items-center justify-center hover:scale-110 hover:transition hover:ease-in-out hover:duration-400 hover:delay-200"
+  id={id}
+>
+  <div class="flex items-center justify-center">
+    <p
+      class="text-gradient-to-b from-smoky-black to-tigerseye -rotate-45 text-center text-base font-bold"
+    >
+      {title}
+    </p>
+  </div>
+</li>

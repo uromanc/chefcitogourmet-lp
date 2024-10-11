@@ -1,0 +1,13 @@
+---
+const { id, title, precio } = Astro.props;
+---
+
+<li
+  class="w-96 h-24 bg-smoky-black flex flex-col justify-between rounded-3xl p-4 hover:scale-110 hover:transition hover:ease-in-out hover:duration-400 hover:delay-200"
+  id={id}
+>
+  <p class="text-sm font-bold text-princeton-orange text-center">{title}</p>
+  <p class="text-sm font-bold text-princeton-orange text-right self-end">
+    $<span class="font-light text-white-smoke">{precio}</span>
+  </p>
+</li>
