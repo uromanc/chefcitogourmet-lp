@@ -1,0 +1,43 @@
+---
+import LogoUbicacion from "./icons/LogoUbicacion.astro";
+---
+
+<section
+  class="w-[1000px] mt-10 flex gap-5 flex-col justify-center"
+  id="#nosotros"
+>
+  <h3 class="font-black text-7xl">Nosotros</h3>
+  <article class="flex flex-col justify-end">
+    <p class="text-4xl">
+      Empresa victorense, ofrecémos boneless, hamburguesas y mucho más.
+    </p>
+    <blockquote class="text-4xl font-thin italic text-right self-end">
+      "La mejor calidad, el mejor servicio."
+    </blockquote>
+  </article>
+  <div class="flex items-center justify-center">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d456.5905692795157!2d-99.13132601659564!3d23.721528470926586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x867953cbad10af07%3A0xe017b32c1b79bb3b!2sChefcito%20Gourmet!5e0!3m2!1sen!2smx!4v1728619796100!5m2!1sen!2smx"
+      width="640"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      class="rounded-l-3xl"
+    >
+    </iframe>
+    <div
+      class="w-[340px] h-[400px] bg-princeton-orange text-white-smoke rounded-r-3xl flex flex-col items-center justify-center"
+    >
+      <a
+        class="flex flex-col items-center justify-center hover:scale-110 hover:transition hover:ease-in-out hover:duration-400 hover:delay-200"
+        href="https://maps.app.goo.gl/kT1pqx81J7coaQqF8"
+        target="_blank"
+      >
+        <LogoUbicacion />
+        <p class="text-4xl text-center">Úbica nuestra sucursal</p>
+      </a>
+    </div>
+  </div>
+</section>
