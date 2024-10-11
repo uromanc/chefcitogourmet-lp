@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "O:/Urodev/chefcitogourmet_landingp",
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "src/*"
